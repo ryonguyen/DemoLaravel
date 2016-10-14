@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\News;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -10,7 +11,7 @@ class TestController extends Controller
 {
     public function getTest(Request $request)
     {
-        return 'getTest';
+        return News::all();
     }
 
     public function postTest(Request $request)
