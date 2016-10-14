@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/news', 'ControllerNews@create');
+Route::get('/details/{id_news}', 'ControllerNews@detailNews');

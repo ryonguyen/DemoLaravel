@@ -11,6 +11,12 @@ class TestController extends Controller
 {
     public function getTest(Request $request)
     {
+        $output = '';
+//        $listNews = News::all();
+//        foreach($listNews as $new){
+//            echo $new->news_title;
+//        }
+//        return $output;
         return News::all();
     }
 
